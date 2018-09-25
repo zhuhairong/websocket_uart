@@ -1,0 +1,18 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE	:= websocket
+
+LOCAL_CPPFLAGS	+= -fexceptions
+
+LOCAL_C_INCLUDES := include
+
+WEB_SOCKET_FILES := websock.c base64.c sha1.c openssl.c frames.c default_callbacks.c api.c sha1.h base64.h utf.c util.c 
+
+LOCAL_SRC_FILES	:= $(WEB_SOCKET_FILES) conv.c main.c 
+
+LOCAL_SHARED_LIBRARIES += libevent liblog libz libssl
+
+include $(BUILD_EXECUTABLE)
+
+
