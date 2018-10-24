@@ -1,5 +1,5 @@
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/obj/local/armeabi/objs/ws_uart/uart_access.o: \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/uart_access.cpp \
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/obj/local/armeabi/objs/ws_uart/uart_access.o: \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/uart_access.cpp \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/stdio.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -60,8 +60,8 @@
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/stdlib.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/alloca.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/memory.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/uart_access.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/termios.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/uart_access.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/termios.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/ioctl.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/ioctl.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/asm/ioctl.h \
@@ -79,7 +79,7 @@
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/time.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sched.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/sched.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/globle.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/globle.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/android/log.h
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/stdio.h:
@@ -202,9 +202,9 @@
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/memory.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/uart_access.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/uart_access.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/termios.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/termios.h:
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/ioctl.h:
 
@@ -240,6 +240,6 @@
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/sched.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/globle.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/globle.h:
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/android/log.h:

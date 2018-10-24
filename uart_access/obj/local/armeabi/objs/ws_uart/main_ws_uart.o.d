@@ -1,5 +1,5 @@
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/obj/local/armeabi/objs/ws_uart/main_ws_uart.o: \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/main_ws_uart.cpp \
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/obj/local/armeabi/objs/ws_uart/main_ws_uart.o: \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/main_ws_uart.cpp \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/stdio.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -54,8 +54,8 @@
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/select.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/sysconf.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/pathconf.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/uart_access.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/termios.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/uart_access.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/termios.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/ioctl.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/ioctl.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/asm/ioctl.h \
@@ -69,16 +69,16 @@
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/asm-generic/ioctls.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/ioctl_compat.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/tty.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/globle.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/globle.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/android/log.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/websock.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/websock_config.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/websock.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/websock_config.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/endian.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/endian.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/assert.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/event.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/event-config.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/util.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/event.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/event-config.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/util.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/netdb.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/socket.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/socket.h \
@@ -90,18 +90,18 @@
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/asm-generic/sockios.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/sockios.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/uio.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/buffer.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/buffer.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/uio.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/bufferevent.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/thread.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/bufferevent.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/thread.h \
  /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/wchar.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/types.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/api.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/frames.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/default_callbacks.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/utf.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/util.h \
- /home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/api.h
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/types.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/api.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/frames.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/default_callbacks.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/utf.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/util.h \
+ /home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/api.h
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/stdio.h:
 
@@ -211,9 +211,9 @@
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/pathconf.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/uart_access.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/uart_access.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/termios.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/termios.h:
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/ioctl.h:
 
@@ -241,13 +241,13 @@
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/tty.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/globle.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/globle.h:
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/websock.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/websock.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/websock_config.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/websock_config.h:
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/endian.h:
 
@@ -255,11 +255,11 @@
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/assert.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/event.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/event.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/event-config.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/event-config.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/util.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/util.h:
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/netdb.h:
 
@@ -283,26 +283,26 @@
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/linux/uio.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/buffer.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/buffer.h:
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/sys/uio.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/bufferevent.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/bufferevent.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/thread.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/include/event2/thread.h:
 
 /home/hopechart/work/android-ndk-r11c/platforms/android-21/arch-arm/usr/include/wchar.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/types.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/types.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/api.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/api.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/frames.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/frames.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/default_callbacks.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/default_callbacks.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/utf.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/utf.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/util.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/util.h:
 
-/home/hopechart/work/px3_/hq_rkpx3/external/zhr/test/websocket_uart/uart_access/jni/../../websocket-master/jni/api.h:
+/home/hopechart/rk3399/external/zhr/websocket_uart/uart_access/jni/../../websocket-master/jni/api.h:

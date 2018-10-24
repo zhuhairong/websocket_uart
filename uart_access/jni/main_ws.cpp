@@ -9,6 +9,24 @@ extern "C"
 #include "websock.h"
 #include "api.h"
 }
+
+libwebsock_client_state* g_state = NULL;
+char sendBuf[2046];
+pthread_mutex_t client_mutex;
+
+void* send_thread(void*)
+{
+	while(true)
+	{
+		pthread_mutex_lock(&client_mutex);
+		if(g_state)
+			libwebsock_send_text(g_state, sendBuf);
+		pthread_mutex_unlock(&client_mutex);
+		usleep(30000);
+	}
+	return NULL;
+}
+
 // call backs
 int 
 onmessage(libwebsock_client_state *state, libwebsock_message *msg)
@@ -18,7 +36,11 @@ onmessage(libwebsock_client_state *state, libwebsock_message *msg)
 	fprintf(stderr, "Payload Length: %llu\n", msg->payload_len);
 	fprintf(stderr, "Payload: %s\n", msg->payload);
 	//now let's send it back.
-	libwebsock_send_text(state, msg->payload);
+	//libwebsock_send_text(state, msg->payload);
+
+	memcpy(sendBuf, msg->payload, msg->payload_len);
+
+	
 
 //	char *gbk = "·þÎñ¶Ë»Ø¸´";
 //	int len = strlen(gbk);
@@ -37,6 +59,10 @@ int
 onopen(libwebsock_client_state *state)
 {
 	fprintf(stderr, "onopen: %d\n", state->sockfd);
+	pthread_mutex_lock(&client_mutex);
+	g_state = state;
+	pthread_mutex_unlock(&client_mutex);
+		
 	return 0;
 }
 
@@ -44,6 +70,12 @@ int
 onclose(libwebsock_client_state *state)
 {
 	fprintf(stderr, "onclose: %d\n", state->sockfd);
+	pthread_mutex_lock(&client_mutex);
+	if(g_state == state)
+	{
+		g_state = NULL;
+	}
+	pthread_mutex_unlock(&client_mutex);
 	return 0;
 }
 
@@ -64,11 +96,16 @@ int main(int argc, char *argv[])
 
 	char *port = "12000";
 
-	libwebsock_bind(ctx, "127.0.0.1", port);
+	libwebsock_bind(ctx, "192.168.104.230", port);
 
 	ctx->onmessage = onmessage;
  	ctx->onopen = onopen;
 	ctx->onclose = onclose;
+
+	pthread_t threadSend;
+	pthread_create(&threadSend, NULL, send_thread, NULL);
+
+	pthread_mutex_init(&client_mutex, NULL);
 
 	printf("libwebsock_wait start \n");
 	libwebsock_wait(ctx);
