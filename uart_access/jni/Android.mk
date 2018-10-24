@@ -30,7 +30,9 @@ LOCAL_C_INCLUDES += /home/hopechart/work/android-ndk-r11c/platforms/android-21/a
 					$(LOCAL_PATH)/../../websocket-master/jni
 
 LOCAL_CPPFLAGS := 
-LOCAL_LDFLAGS := -L$(LOCAL_PATH)/../../websocket-master/libs/armeabi-v7a/  -llog -lwebsocket -fPIC 
+LOCAL_LDFLAGS := $(LOCAL_PATH)/../../libevent-master/libs/$(TARGET_ARCH_ABI)/libevent.so \
+				$(LOCAL_PATH)/../../websocket-master/libs/$(TARGET_ARCH_ABI)/libwebsocket.so  -llog -fPIC \
+				
 
 
 include $(BUILD_EXECUTABLE)
@@ -49,7 +51,8 @@ LOCAL_C_INCLUDES += /home/hopechart/work/android-ndk-r11c/platforms/android-21/a
 					$(LOCAL_PATH)/../../websocket-master/jni
 
 LOCAL_CPPFLAGS := 
-LOCAL_LDFLAGS := -L$(LOCAL_PATH)/../../websocket-master/libs/armeabi-v7a/  -llog -lwebsocket -fPIC 
+LOCAL_LDFLAGS := $(LOCAL_PATH)/../../libevent-master/libs/$(TARGET_ARCH_ABI)/libevent.so \
+			-L$(LOCAL_PATH)/../../websocket-master/libs/armeabi-v7a/  -llog -lwebsocket -fPIC
 
 
 include $(BUILD_EXECUTABLE)

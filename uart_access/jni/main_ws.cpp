@@ -18,10 +18,12 @@ void* send_thread(void*)
 {
 	while(true)
 	{
-		pthread_mutex_lock(&client_mutex);
-		if(g_state)
-			libwebsock_send_text(g_state, sendBuf);
-		pthread_mutex_unlock(&client_mutex);
+//		pthread_mutex_lock(&client_mutex);
+//		if(g_state)
+//			libwebsock_send_text(g_state, sendBuf);
+//		pthread_mutex_unlock(&client_mutex);
+		static int cc = 0;
+		sprintf(sendBuf, "abc:%d\n", cc++);
 		usleep(30000);
 	}
 	return NULL;
@@ -36,9 +38,9 @@ onmessage(libwebsock_client_state *state, libwebsock_message *msg)
 	fprintf(stderr, "Payload Length: %llu\n", msg->payload_len);
 	fprintf(stderr, "Payload: %s\n", msg->payload);
 	//now let's send it back.
-	//libwebsock_send_text(state, msg->payload);
+	libwebsock_send_text(state, sendBuf);
 
-	memcpy(sendBuf, msg->payload, msg->payload_len);
+	//memcpy(sendBuf, msg->payload, msg->payload_len);
 
 	
 

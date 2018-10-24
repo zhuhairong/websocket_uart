@@ -114,6 +114,7 @@ void libwebsock_handle_signal(evutil_socket_t sig, short event, void *ptr) {
 		break;
 	case SIGINT:
 	default:
+		printf("event_base_loopexit\n");
 		event_base_loopexit(ctx->base, NULL);
 		break;
 	}
@@ -248,6 +249,7 @@ void libwebsock_cleanup_thread_list(evutil_socket_t sock, short what, void *arg)
 }
 
 void libwebsock_shutdown(libwebsock_client_state *state) {
+	printf("libwebsock_shutdown zhr\n");
 	libwebsock_context *ctx = (libwebsock_context *) state->ctx;
 	struct event *ev;
 	struct timeval tv = { 1, 0 };
@@ -261,9 +263,12 @@ void libwebsock_shutdown(libwebsock_client_state *state) {
 		state->next->prev = state->prev;
 	}
 	//TODO: may need to make this synchronous and not thread it out.
+	printf("libwebsock_shutdown zhr1\n");
 	if ((state->flags & STATE_CONNECTED) && state->onclose) {
+		printf("libwebsock_shutdown zhr2\n");
 		state->onclose(state);
 	}
+	printf("libwebsock_shutdown zhr3\n");
 	bufferevent_free(state->bev);
 	//schedule cleanup.
 	ev = event_new(ctx->base, -1, 0, libwebsock_post_shutdown_cleanup,
@@ -276,6 +281,7 @@ void libwebsock_shutdown_after_send(struct bufferevent *bev, void *arg) {
 	struct timeval tv = { 0, 0 };
 	libwebsock_client_state *state = (libwebsock_client_state *) arg;
 	libwebsock_context *ctx = state->ctx;
+	printf("libwebsock_shutdown_after_send zhr\n");
 	ev = event_new(ctx->base, -1, 0, libwebsock_shutdown_after_send_cb,
 			(void *) state);
 	event_add(ev, &tv);
@@ -284,6 +290,7 @@ void libwebsock_shutdown_after_send(struct bufferevent *bev, void *arg) {
 void libwebsock_shutdown_after_send_cb(evutil_socket_t fd, short what,
 		void *arg) {
 	libwebsock_client_state *state = (libwebsock_client_state *) arg;
+	printf("libwebsock_shutdown_after_send_cb zhr\n");
 	libwebsock_shutdown(state);
 }
 
