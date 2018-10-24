@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 
 include $(CLEAR_VARS)
-LOCAL_MODULE	:= websocket_server
+LOCAL_MODULE	:= libwebsocket
 
 
 LOCAL_LDLIBS	+= -llog -lz
@@ -13,15 +13,16 @@ LOCAL_C_INCLUDES := include \
 
 WEB_SOCKET_FILES := websock.c base64.c sha1.c  frames.c default_callbacks.c api.c sha1.h base64.h utf.c util.c 
 
-LOCAL_SRC_FILES	:= $(WEB_SOCKET_FILES) conv.c uart_access.cpp main.c 
+LOCAL_SRC_FILES	:= $(WEB_SOCKET_FILES) conv.c 
+#uart_access.cpp main.c 
 #main_ws_uart.cpp
 
 
 LOCAL_LDFLAGS += ../../libevent-master/libs/$(TARGET_ARCH_ABI)/libevent.so 
 
-#include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 #include $(BUILD_STATIC_LIBRARY)
-include $(BUILD_EXECUTABLE)
+#include $(BUILD_EXECUTABLE)
 
 ###################################
 

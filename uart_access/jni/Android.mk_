@@ -18,24 +18,16 @@ include $(BUILD_SHARED_LIBRARY)
 
 #/////////////////////////////////////////////////////////////////////////////////////LOCAL_PATH:= $(call my-dir)
 
-
-
-
 include $(CLEAR_VARS)
-LOCAL_MODULE = libwebsocket
-LOCAL_PREBUILT_LIBS := ../websocket-master/libs/armeabi-v7a/libwebsocket.so
-
+LOCAL_MODULE := libwebsocket
 LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_STEM := $(LOCAL_MODULE)
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MULTILIB := both
+LOCAL_SRC_FILES := ../websocket-master/libs/armeabi-v7a/libwebsocket.so
+include $(BUILD_PREBUILT)
 
-include $(BUILD_SHARED_LIBRARY)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE = libevent
-LOCAL_PREBUILT_LIBS := $(LOCAL_PATH)/../libevent-master/libs/armeabi-v7a/libevent.so
-
-LOCAL_MODULE_TAGS := optional
-
-include $(BUILD_SHARED_LIBRARY)
 #/////////////////////////////////////////////////////////////////////////////////////
 include $(CLEAR_VARS)
 
@@ -46,7 +38,7 @@ LOCAL_SHARED_LIBRARIES := libwebsocket \
 						libutils \
 						liblog \
 						libuart_access_min \
-						libevent
+						libevent 
 
 LOCAL_SRC_FILES := main_ws_uart.cpp
 
@@ -57,9 +49,7 @@ LOCAL_C_INCLUDES := $(KERNEL_HEADERS) \
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := ws_uart
-
-LOCAL_LDFLAGS +=$(LOCAL_PATH)/../websocket-master/obj/local/armeabi-v7a/libwebsocket.a 
-				
+			
 
 include $(BUILD_EXECUTABLE)
 
